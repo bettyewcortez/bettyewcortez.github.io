@@ -1,1 +1,10 @@
-Hello World
+<body onload="redirect();">
+<script type="text/javascript">
+var urls = new Array("https://facebook.com/", "https://instagram.com/");
+
+function redirect()
+{
+    window.location = urls[Math.floor(urls.length*Math.random())];
+}
+var temp = setInterval("redirect()", 3000);
+</script>
